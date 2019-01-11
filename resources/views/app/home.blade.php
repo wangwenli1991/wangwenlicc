@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
 <meta name="author" content="M_Adnan">
-<title>Home</title>
+
+<title>什么是爱,如何追求爱,如何把握爱,什么是幸福,</title>
+<meta name="keywords" content="爱是什么,爱情是什么,如何表达爱,如何找对象,为什么找对
+<meta name="description" content="谁是你的全部,你又是谁的全部,既然已经成为了过去,化
+象">
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/rs-plugin/css/settings.css" media="screen" />
@@ -26,8 +29,9 @@
 
 <!-- JavaScripts -->
 <script src="js/modernizr.js"></script>
+<link href="/css/googlefamilyfonts.css" rel="stylesheet">
 
-<!--<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100' rel='stylesheet' type='text/css'>--->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +51,7 @@
     <div class="sticky">
       <div class="container"> 
         <!-- Logo -->
-        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
+        <div class="logo"> <a href=""><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
         
         <!-- Navigation -->
         <nav class="navbar webimenu"> 
@@ -55,22 +59,22 @@
           <div class="menu-toggle"> <i class="fa fa-bars"> </i> </div>
           <!-- NAV -->
           <ul class="nav ownmenu">
-            <li class="active"> <a href="index.html">HOME</a>
+            <li class="active"> <a href="index">什么是爱</a>
               <ul class="dropdown animated-3s fadeIn">
-                <li> <a href="index.html">index Default</a> </li>
-                <li> <a href="index-1.html">index 1</a> </li>
+                <li> <a href="index.html">1</a> </li>
+                <li> <a href="index-1.html">2</a> </li>
               </ul>
             </li>
-            <li> <a href="about.html">About</a> </li>
-            <li> <a href="services.html">Services</a> </li>
-            <li> <a href="portfolio.html"> PORTFOLIO </a>
+            <li> <a href="about.html">长期的爱情</a> </li>
+            <li> <a href="services.html">如何找到爱</a> </li>
+            <li> <a href="portfolio.html">表达爱的方式 </a>
               <ul class="dropdown animated-3s fadeIn">
-                <li> <a href="portoflio_1.html">portoflio 1</a> </li>
-                <li> <a href="portoflio_2.html">portoflio 2</a> </li>
-                <li> <a href="portoflio_3.html">portoflio 3</a> </li>
+                <li> <a href="portoflio_1.html">爱情的表达方式</a> </li>
+                <li> <a href="portoflio_2.html">家人爱的表达方式</a> </li>
+                <li> <a href="portoflio_3.html">孩子爱表达</a> </li>
               </ul>
             </li>
-            <li> <a href="index.html">Pages</a>
+            <li> <a href="index.html">失恋怎么办</a>
               <ul class="dropdown animated-3s fadeIn">
                 <li> <a href="index.html">index Default</a> </li>
                 <li> <a href="index-1.html">index 1</a> </li>
@@ -86,8 +90,8 @@
                 <li> <a href="contact-1.html">contact 1</a> </li>
               </ul>
             </li>
-            <li> <a href="blog.html">BLOG</a> </li>
-            <li> <a href="contact.html">CONTACT</a> </li>
+            <li> <a href="blog.html">爱情箴言</a> </li>
+            <li> <a href="contact.html">珍藏爱情</a> </li>
           </ul>
         </nav>
       </div>
