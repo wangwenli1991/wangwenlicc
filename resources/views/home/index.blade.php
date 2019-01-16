@@ -76,7 +76,7 @@
         <!-- SLIDE  -->
         <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
           <!-- MAIN IMAGE --> 
-          <img src="images/slide-2.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+          <!-- <img src="images/slide-2.jpg"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">  -->
           <!-- LAYERS --> 
           
           <!-- LAYER NR. 2 -->
@@ -137,7 +137,7 @@
         <!-- SLIDE  -->
         <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
           <!-- MAIN IMAGE --> 
-          <img src="images/slide-3.jpg"  alt="home_slider3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+          <!-- <img src="images/slide-3.jpg"  alt="home_slider3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">  -->
           <!-- LAYERS --> 
           
           <!-- LAYER NR. 1 -->

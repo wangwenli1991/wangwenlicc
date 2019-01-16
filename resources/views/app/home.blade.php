@@ -166,7 +166,7 @@
   <!--======= RIGHTS =========-->
   <div class="rights">
     <div class="container">
-      <p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+      <p>Copyright &copy; 2017.Company name All rights reserved.版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank" title=""> 皖ICP备17000855号-2</a> - Collect from <a href="" title="" target="_blank">爱情网</a></p>
       <div class="scroll"> <a href="#wrap" class="go-up"><i class="lnr lnr-arrow-up"></i></a> </div>
     </div>
   </div>
