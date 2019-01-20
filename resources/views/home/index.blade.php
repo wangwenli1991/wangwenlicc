@@ -58,10 +58,10 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto main-nav ">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a>
+								<a class="nav-link" href="index.html">学习爱</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="dashboard.html">Dashboard</a>
+								<a class="nav-link" href="dashboard.html">学习技术</a>
 							</li>
 							<li class="nav-item dropdown dropdown-slide">
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +69,7 @@
 								</a>
 								<!-- Dropdown list -->
 								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="category.html">Category</a>
+									<a class="dropdown-item" href="category.html">学习做人</a>
 									<a class="dropdown-item" href="single.html">Single Page</a>
 									<a class="dropdown-item" href="store-single.html">Store Single</a>
 									<a class="dropdown-item" href="dashboard.html">Dashboard</a>
