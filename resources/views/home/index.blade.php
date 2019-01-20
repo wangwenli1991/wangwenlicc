@@ -1,884 +1,565 @@
-﻿<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>如何学习，如何学习爱，如何学习技术，如何学习做人，王文礼博客</title>
 
     <meta name="keywords" content="如何学会爱，怎么学习，如何学习技术，如何学习做人，如何成长" >
     <meta name="description" content="世界上没有后悔药，生命对于我们只有一次，只有吃过亏的人才会接受前人的教诲，人类最大的好处就是学会了传承文明，会学习，做不到最好，但是我一直在努力-王文礼博客" >
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/template/stylesheets/bootstrap.css') }}" >
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link href="{{ asset('/template/plugins/jquery-ui/jquery-ui.min.css ') }} " rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="{{ asset('/template/plugins/bootstrap/dist/css/bootstrap.min.css') }} " rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="{{ asset('/template/plugins/font-awesome/css/font-awesome.min.css') }} " rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="{{ asset('/template/plugins/slick-carousel/slick/slick.css') }} " rel="stylesheet">
+  <link href="{{ asset('/template/plugins/slick-carousel/slick/slick-theme.css') }} " rel="stylesheet">
+  <!-- Fancy Box -->
+  <link href="{{ asset('/template/plugins/fancybox/jquery.fancybox.pack.css') }} " rel="stylesheet">
+  <link href="{{ asset('/template/plugins/jquery-nice-select/css/nice-select.css') }} " rel="stylesheet">
+  <link href="{{ asset('/template/plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css') }} " rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="{{ asset('/template/css/style.css') }} " rel="stylesheet">
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/template/stylesheets/style.css') }}">
+  <!-- FAVICON -->
+  <link href="{{ asset('/template/img/favicon.png') }} " rel="shortcut icon">
 
-    <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/template/stylesheets/responsive.css') }}">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/template/stylesheets/colors/color1.css') }}" id="colors">
-	
-	<!-- Animation Style -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/template/stylesheets/animate.css ') }}">
+</head>
 
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>                                 
-<body class="header-sticky page-loading">   
-    <div class="loading-overlay">
-    </div>
-    
-    <!-- Boxed -->
-    <div class="boxed">
-        <div class="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="flat-address">  
-                            <div class="social-links">
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-facebook-official"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>      
-                            <div class="custom-info">
-                                <span>Have any questions?</span> 
-                                <i class="fa fa-reply"></i>themesflat@gmail.com 
-                                <i class="fa fa-phone"></i>1 800 232 3485      
-                            </div>
-                        </div><!-- /.flat-address -->
-                    </div><!-- /.col-md-8 -->   
-                    <div class="col-md-4">
-                        <div class="top-navigator">        
-                            <ul>
-                                <li><a href="#">Pages</a>
-                                    <ul>
-                                        <li><a href="#">Search Results</a></li>
-                                        <li><a href="#">404 Page</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Case Studies</a>
-                                    <ul>
-                                        <li><a href="#">Layout 1</a></li>
-                                        <li><a href="#">Layout 2</a></li>
-                                        <li><a href="#">Layout 3</a></li>
-                                        <li><a href="#">Single Layout 1</a></li>
-                                        <li><a href="#">Single Layout 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">News</a>
-                                    <ul class="right-sub-menu">
-                                        <li><a href="#">List Layout</a></li>
-                                        <li><a href="#">Grid Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="shop.html">Shop</a>
-                                    <ul class="right-sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li><a href="shop-detail.html">Products Single</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div><!-- /.top-navigator -->
-                    </div><!-- /.col-md-4 -->              
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.top -->
+<body class="body-wrapper">
 
-        <!-- Header -->            
-        <header id="header" class="header clearfix"> 
-            <div class="header-wrap clearfix">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div id="logo" class="logo">
-                                <a href="index.html">
-                                    <img src="{{ asset('/template/images/logo.png') }}" alt="images">
-                                </a>
-                            </div><!-- /.logo -->
-                            <div class="btn-menu">
-                                <span></span>
-                            </div><!-- //mobile menu button -->
-                       
-                            <div class="nav-wrap">                                
-                                <nav id="mainnav" class="mainnav">
-                                    <ul class="menu"> 
-										<li><a href="index.html">Home</a></li>
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="shop-detail.html">Shop Detail</a></li>
-                                        <li><a href="contact.html">Contact </a></li>
-                                    </ul><!-- /.menu -->
-                                </nav><!-- /.mainnav -->  
-                            </div><!-- /.nav-wrap -->
-                        </div><!-- /.col-md-9 -->
-                        <div class="col-md-3">
-                            <div class="top-search">
-                                <div class="widget widget_search">
-                                    <form class="search-form">
-                                        <input type="search" class="search-field" placeholder="Search …">
-                                        <input type="submit" class="search-submit">
-                                    </form>
-                                </div>
-                            </div>
-                        </div><!-- /.col-md-3 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->             
-            </div><!-- /.header-inner --> 
-        </header><!-- /.header -->
 
-        <!-- Slider -->
-        <div class="tp-banner-container">
-            <div class="tp-banner" >
-                <ul>
-                    <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/1.jpg" alt="slider-image" />
-                        <div class="tp-caption sfl title-slide center" data-x="40" data-y="111" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
-                            Sales force<br>transformation.
-                        </div>  
-                        <div class="tp-caption sfr desc-slide center" data-x="40" data-y="272" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">                       
-                            It isn't just about selling better, it's about selling differently.
-                        </div>    
-                        <div class="tp-caption sfl flat-button-slider" data-x="40" data-y="323" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="#">Find your optimal sales process</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>                    
-                    </li>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg  navigation">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="dashboard.html">Dashboard</a>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Pages <span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="category.html">Category</a>
+									<a class="dropdown-item" href="single.html">Single Page</a>
+									<a class="dropdown-item" href="store-single.html">Store Single</a>
+									<a class="dropdown-item" href="dashboard.html">Dashboard</a>
+									<a class="dropdown-item" href="user-profile.html">User Profile</a>
+									<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
+									<a class="dropdown-item" href="blog.html">Blog</a>
+									<a class="dropdown-item" href="single-blog.html">Single Post</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Listing <span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto mt-10">
+							<li class="nav-item">
+								<a class="nav-link login-button" href="index.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link add-button" href="#"><i class="fa fa-plus-circle"></i> Add Listing</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
 
-                    <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/2.jpg" alt="slider-image" />
-                        <div class="tp-caption sfl title-slide center" data-x="40" data-y="111" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
-                            finding the<br>right sales talent
-                        </div>  
-                        <div class="tp-caption sfr desc-slide center" data-x="40" data-y="272" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">                       
-                            Get the most competencies in the fewest bodies.
-                        </div>    
-                        <div class="tp-caption sfl flat-button-slider bg-button-slider-15416e" data-x="40" data-y="323" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="#">Learn more</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+<!--===============================
+=            Hero Area            =
+================================-->
 
-                        <div class="tp-caption sfr flat-button-slider" data-x="268" data-y="323" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="#">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
+<section class="hero-area bg-1 text-center overly">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Header Contetnt -->
+				<div class="content-block">
+					<h1>Buy & Sell Near You </h1>
+					<p>Join the millions who buy and sell from each other <br> everyday in local communities around the world</p>
+					<div class="short-popular-category-list text-center">
+						<h2>Popular Category</h2>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href=""><i class="fa fa-bed"></i> Hotel</a></li>
+							<li class="list-inline-item">
+								<a href=""><i class="fa fa-grav"></i> Fitness</a>
+							</li>
+							<li class="list-inline-item">
+								<a href=""><i class="fa fa-car"></i> Cars</a>
+							</li>
+							<li class="list-inline-item">
+								<a href=""><i class="fa fa-cutlery"></i> Restaurants</a>
+							</li>
+							<li class="list-inline-item">
+								<a href=""><i class="fa fa-coffee"></i> Cafe</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<!-- Advance Search -->
+				<div class="advance-search">
+					<form action="#">
+						<div class="row">
+							<!-- Store Search -->
+							<div class="col-lg-6 col-md-12">
+								<div class="block d-flex">
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="block d-flex">
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
+									<!-- Search Button -->
+									<button class="btn btn-main">SEARCH</button>
+								</div>
+							</div>
+						</div>
+					</form>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
 
-                    </li>
+<!--===================================
+=            Client Slider            =
+====================================-->
 
-                    <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/3.jpg" alt="slider-image" />
-                        <div class="tp-caption sfl title-slide center" data-x="40" data-y="111" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
-                            Top 20 Sales<br>Training Company
-                        </div>  
-                        <div class="tp-caption sfr desc-slide center" data-x="40" data-y="272" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">                       
-                            We serve every size and type company from startups to Fortune 50.
-                        </div>    
-                        <div class="tp-caption sfl flat-button-slider" data-x="40" data-y="323" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"><a href="#">Learn more</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></div>
-                    </li>
-                </ul>
-            </div>
+
+<!--===========================================
+=            Popular deals section            =
+============================================-->
+
+<section class="popular-deals section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h2>Trending Ads</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, magnam.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- offer 01 -->
+			<div class="col-sm-12 col-lg-4">
+				<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="">
+				<img class="card-img-top img-fluid" src="images/products/products-1.jpg" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			<div class="col-sm-12 col-lg-4">
+				<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="">
+				<img class="card-img-top img-fluid" src="images/products/products-2.jpg" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="">Full Study Table Combo</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Furnitures</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+			</div><div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+			<div class="col-sm-12 col-lg-4">
+				<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="">
+				<img class="card-img-top img-fluid" src="images/products/products-3.jpg" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href=""><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+
+
+
+<!--==========================================
+=            All Category Section            =
+===========================================-->
+
+<section class=" section">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section title -->
+				<div class="section-title">
+					<h2>All Categories</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+				</div>
+				<div class="row">
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-laptop icon-bg-1"></i> 
+								<h4>Electronics</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Laptops <span>93</span></a></li>
+								<li><a href="category.html">Iphone <span>233</span></a></li>
+								<li><a href="category.html">Microsoft  <span>183</span></a></li>
+								<li><a href="category.html">Monitors <span>343</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-apple icon-bg-2"></i> 
+								<h4>Restaurants</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Cafe <span>393</span></a></li>
+								<li><a href="category.html">Fast food <span>23</span></a></li>
+								<li><a href="category.html">Restaurants  <span>13</span></a></li>
+								<li><a href="category.html">Food Track<span>43</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-home icon-bg-3"></i> 
+								<h4>Real Estate</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Farms <span>93</span></a></li>
+								<li><a href="category.html">Gym <span>23</span></a></li>
+								<li><a href="category.html">Hospitals  <span>83</span></a></li>
+								<li><a href="category.html">Parolurs <span>33</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-shopping-basket icon-bg-4"></i> 
+								<h4>Shoppings</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Mens Wears <span>53</span></a></li>
+								<li><a href="category.html">Accessories <span>212</span></a></li>
+								<li><a href="category.html">Kids Wears <span>133</span></a></li>
+								<li><a href="category.html">It & Software <span>143</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-briefcase icon-bg-5"></i> 
+								<h4>Jobs</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">It Jobs <span>93</span></a></li>
+								<li><a href="category.html">Cleaning & Washing <span>233</span></a></li>
+								<li><a href="category.html">Management  <span>183</span></a></li>
+								<li><a href="category.html">Voluntary Works <span>343</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-car icon-bg-6"></i> 
+								<h4>Vehicles</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Bus <span>193</span></a></li>
+								<li><a href="category.html">Cars <span>23</span></a></li>
+								<li><a href="category.html">Motobike  <span>33</span></a></li>
+								<li><a href="category.html">Rent a car <span>73</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-paw icon-bg-7"></i> 
+								<h4>Pets</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Cats <span>65</span></a></li>
+								<li><a href="category.html">Dogs <span>23</span></a></li>
+								<li><a href="category.html">Birds  <span>113</span></a></li>
+								<li><a href="category.html">Others <span>43</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-laptop icon-bg-8"></i> 
+								<h4>Services</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">Cleaning <span>93</span></a></li>
+								<li><a href="category.html">Car Washing <span>233</span></a></li>
+								<li><a href="category.html">Clothing  <span>183</span></a></li>
+								<li><a href="category.html">Business <span>343</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+
+
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer section section-sm">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about">
+          <!-- footer logo -->
+          <img src="images/logo-footer.png" alt="">
+          <!-- description -->
+          <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-
-        <div class="flat-row pad-top40px pad-bottom40px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="no-margin-top no-margin-bottom f-size16px">We ensure sustained behavior change and drive increased sales performance. <a class="link" href="#">Learn more</a></h3>
-                    </div><!-- /.col-md-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div class="flat-row pad-top0px">
-            <div class="container">
-                <div class="row">
-                    <div class="flat-wrapper">
-                        <div class="flat-imagebox clearfix">
-                            <div class="item-three-column">
-                                <div class="imagebox">
-                                    <div class="box-wrapper">
-                                        <div class="box-image">
-                                            <img src="images/imagebox/1.jpg" alt="images">
-                                        </div>
-                                        <div class="box-header">
-                                            <h5 class="box-title">
-                                                <a href="#">Sales Effectiveness Solutions</a>
-                                            </h5>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-desc">Sales Effectiveness Solutions by Cosine deliver proven content, deep customization, and expert perspective to help you meet your exact development needs.</div>
-                                            <a class="button style1" href="#">Learn more</a>
-                                        </div>
-                                    </div>
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="imagebox">
-                                    <div class="box-wrapper">
-                                        <div class="box-image">
-                                            <img src="images/imagebox/2.jpg" alt="images">
-                                        </div>
-                                        <div class="box-header">
-                                            <h5 class="box-title">
-                                                <a href="#">A Focus on Customized Sales Training</a>
-                                            </h5>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-desc">Cosine’s customized solutions helps leaders prepare their organizations to execute sales strategies and achieve business objectives.</div>
-                                            <a class="button style1" href="#">Learn more</a>
-                                        </div>
-                                    </div>
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="imagebox">
-                                    <div class="box-wrapper">
-                                        <div class="box-image">
-                                            <img src="images/imagebox/3.jpg" alt="images">
-                                        </div>
-                                        <div class="box-header">
-                                            <h5 class="box-title">
-                                                <a href="#">Continuous Learning Approach</a>
-                                            </h5>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-desc">At Cosine, we seek to partner with you to develop continuous learning solutions that help change behaviors, enhance the effectiveness of your sales organization.</div>
-                                            <a class="button style1" href="#">Learn more</a>
-                                        </div>
-                                    </div>
-                                </div><!-- /.imagebox -->
-                            </div><!-- /.item-three-column -->
-                        </div><!-- /.flat-imagebox -->
-                    </div><!-- /.flat-wrapper -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div class="flat-row background-f1f2f8 pad-bottom40px">
-            <div class="container">
-                <div class="row">
-                    <div class="flat-wrapper">
-                        <div class="flat-title-button">
-                            <h3 class="title"><i class="fa fa-line-chart"></i>Sales Training Programs</h3>
-                            <p><a class="button sm" href="#">View all programs</a></p>
-                        </div>
-                    </div><!-- /.flat-wrapper -->
-                </div><!-- /.row -->
-
-                <div class="flat-divider d30px"></div>
-
-                <div class="row">
-                    <div class="flat-wrapper">
-                        <div class="flat-iconbox clearfix">
-                            <div class="item-three-column">
-                                <div class="iconbox">
-                                    <div class="box-header">
-                                        <div class="box-icon">
-                                            <i class="fa fa-pie-chart"></i>
-                                        </div>
-                                        <h4 class="box-title">Consultative Selling Training</h4>
-                                    </div>
-                                    <div class="box-content">
-                                        Consultative Selling Skills provides a powerful roadmap for a successful need-based dialogue.
-                                        <p class="box-readmore">
-                                            <a href="#">Learn more</a>
-                                        </p>
-                                    </div>      
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="iconbox">
-                                    <div class="box-header">
-                                        <div class="box-icon">
-                                            <i class="fa fa-area-chart"></i>
-                                        </div>
-                                        <h4 class="box-title">Sales Negotiation Training</h4>
-                                    </div>
-                                    <div class="box-content">
-                                        Cosine’s Sales Negotiation Training helps develop the skills needed to negotiate win-win opportunities.
-                                        <p class="box-readmore">
-                                            <a href="#">Learn more</a>
-                                        </p>
-                                    </div>      
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="iconbox">
-                                    <div class="box-header">
-                                        <div class="box-icon">
-                                            <i class="fa fa-bar-chart-o"></i>
-                                        </div>
-                                        <h4 class="box-title">Sales Coaching Training</h4>
-                                    </div>
-                                    <div class="box-content">
-                                        Sales Coaching Training<br>transforms the traditional role of a sales manager.
-                                        <p class="box-readmore">
-                                            <a href="#">Learn more</a>
-                                        </p>
-                                    </div>      
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="iconbox">
-                                    <div class="box-header">
-                                        <div class="box-icon">
-                                            <i class="fa fa-line-chart"></i>
-                                        </div>
-                                        <h4 class="box-title">High Performance Selling</h4>
-                                    </div>
-                                    <div class="box-content">
-                                        High Performance Selling drives results through sales process, deal strategy, and dialogue skills training.
-                                        <p class="box-readmore">
-                                            <a href="#">Learn more</a>
-                                        </p>
-                                    </div>      
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="iconbox">
-                                    <div class="box-header">
-                                        <div class="box-icon">
-                                            <i class="fa fa-bank"></i>
-                                        </div>
-                                        <h4 class="box-title">Trusted Advisor Training</h4>
-                                    </div>
-                                    <div class="box-content">
-                                        Cosine’s Trusted Advisor Training Program teaches the skills to develop a trusted, preferred provider.
-                                        <p class="box-readmore">
-                                            <a href="#">Learn more</a>
-                                        </p>
-                                    </div>      
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-
-                            <div class="item-three-column">
-                                <div class="quick-form">
-                                    <h4>Request a call back.</h4>
-                                    <p>Just submit your details and we’ll be in touch shortly.</p>
-                                    <p>
-                                        <span><input id="phone" name="phone" type="text" value="" placeholder="Phone Number" required="required"></span>
-                                        <span class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Sent Mail"></span>
-                                    </p>     
-                                </div><!-- /.iconbox -->
-                            </div><!-- /.item-three-column -->
-                        </div><!-- /.flat-iconbox -->
-                    </div><!-- /.flat-wrapper -->                    
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div class="bg-themes">
-            <div class="flat-row parallax parallax5 pad165px">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="home-title">SALES TRAINING. SALES COACHING. SELLING SKILLS.<br>
-                            ACTION SELLING CONSISTENTLY IMPROVES SALES PRODUCTIVITY</h3>
-                        </div>
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.flat-row -->
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 offset-lg-1 col-md-3">
+        <div class="block">
+          <h4>Site Pages</h4>
+          <ul>
+            <li><a href="#">Boston</a></li>
+            <li><a href="#">How It works</a></li>
+            <li><a href="#">Deals & Coupons</a></li>
+            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Terms of Services</a></li>
+          </ul>
         </div>
-
-        <div class="flat-row flat-latest-news pad-bottom70px">
-            <div class="container">
-                <div class="row">
-                    <div class="flat-wrapper">
-                        <div class="flat-title-button">
-                            <h3 class="title"><i class="fa fa-newspaper-o"></i>Latest news</h3>
-                            <p><a class="button sm" href="#">View all articles</a></p>
-                        </div>
-                    </div><!-- /.flat-wrapper -->
-                </div><!-- /.row -->
-
-                <div class="flat-divider d30px"></div>
-
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <article class="blog-posts">
-                                    <div class="entry-wrapper">
-                                        <div class="entry-cover">
-                                            <h4 class="entry-time">
-                                                <span class="entry-day">13</span>
-                                                <span class="entry-month">Apr</span>
-                                            </h4>
-                                            <a href="#"><img src="images/blog/1.jpg" alt="images"></a>
-                                        </div>
-                                        <div class="entry-content-wrap">
-                                            <div class="entry-header">
-                                                <h2 class="entry-title">
-                                                    <a href="#">What The Martian Can Teach Sales Professionals</a>
-                                                </h2>
-                                            </div>
-                                            <div class="entry-footer">
-                                                <div class="entry-meta">
-                                                    <span class="entry-author"><a href="#">themesflat</a></span>
-                                                    <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div><!-- /.col-md-6 -->
-                            <div class="col-md-6">
-                                <article class="blog-posts">
-                                    <div class="entry-wrapper">
-                                        <div class="entry-cover">
-                                            <h4 class="entry-time">
-                                                <span class="entry-day">13</span>
-                                                <span class="entry-month">Apr</span>
-                                            </h4>
-                                            <a href="#"><img src="images/blog/2.jpg" alt="images"></a>
-                                        </div>
-                                        <div class="entry-content-wrap">
-                                            <div class="entry-header">
-                                                <h2 class="entry-title">
-                                                    <a href="#">HOW TO OVERCOME B2B PRICE OBJECTIONS</a>
-                                                </h2>
-                                            </div>
-                                            <div class="entry-footer">
-                                                <div class="entry-meta">
-                                                    <span class="entry-author"><a href="#">themesflat</a></span>
-                                                    <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div><!-- /.col-md-6 -->
-                        </div>
-                    </div><!-- /.col-md-8 -->
-
-                    <div class="col-md-4">
-                        <article class="latest-post">
-                            <div class="entry-wrapper clearfix">
-                                <div class="entry-cover">
-                                    <a href="#"><img src="images/blog/c1.jpg" alt="images"></a>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <div class="entry-header">
-                                        <h2 class="entry-title">
-                                            <a href="#">Plan and Prepare For Your Sales Call</a>
-                                        </h2>
-                                    </div>
-                                    <div class="entry-footer">
-                                        <div class="entry-meta">
-                                            <span class="entry-author"><a href="#">themesflat</a></span>
-                                            <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="latest-post">
-                            <div class="entry-wrapper clearfix">
-                                <div class="entry-cover">
-                                    <a href="#"><img src="images/blog/c2.jpg" alt="images"></a>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <div class="entry-header">
-                                        <h2 class="entry-title">
-                                            <a href="#">6 Tips to Retain Your Top Sales Talent</a>
-                                        </h2>
-                                    </div>
-                                    <div class="entry-footer">
-                                        <div class="entry-meta">
-                                            <span class="entry-author"><a href="#">themesflat</a></span>
-                                            <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="latest-post">
-                            <div class="entry-wrapper clearfix">
-                                <div class="entry-cover">
-                                    <a href="#"><img src="images/blog/c3.jpg" alt="images"></a>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <div class="entry-header">
-                                        <h2 class="entry-title">
-                                            <a href="#">Why Your Sales Forecast Is Off</a>
-                                        </h2>
-                                    </div>
-                                    <div class="entry-footer">
-                                        <div class="entry-meta">
-                                            <span class="entry-author"><a href="#">themesflat</a></span>
-                                            <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="latest-post">
-                            <div class="entry-wrapper clearfix">
-                                <div class="entry-cover">
-                                    <a href="#"><img src="images/blog/c4.jpg" alt="images"></a>
-                                </div>
-                                <div class="entry-content-wrap">
-                                    <div class="entry-header">
-                                        <h2 class="entry-title">
-                                            <a href="#">6 Tips to Increase Trade Show Sales</a>
-                                        </h2>
-                                    </div>
-                                    <div class="entry-footer">
-                                        <div class="entry-meta">
-                                            <span class="entry-author"><a href="#">themesflat</a></span>
-                                            <span class="entry-categories"><a href="#">Sales Enablement</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div><!-- /.col-md-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div class="flat-row pad-bottom0px background-20242e">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="title-section style1">
-                            <h3 class="title"><span>Why choose cosine?</span></h3>
-                        </div>
-
-                        <div class="list-about">
-                            <h4>
-                                <span>
-                                    <i class="fa fa-check border"></i>
-                                    Awarded Top Sales Training Company
-                                </span>
-                            </h4>
-                            <p><span>since 1990, over 400,000 salespeople have been certified on the skills of Cosine. These skills are proven to produce the greatest gains in sales performance. Cosine has been recognized by industry leaders and many business publications.</span></p>
-                        </div><!-- /.list-about -->
-
-                        <div class="list-about">
-                            <h4>
-                                <span>
-                                    <i class="fa fa-check border"></i>
-                                    Tailored training solutions, delivered cost-effectively
-                                </span>
-                            </h4>
-                            <p><span>In fact, we designed our programs and materials to be quickly and economically adaptable for any audience, without sacrificing the quality or integrity of the training solution.</span></p>
-                        </div><!-- /.list-about -->
-
-                        <div class="list-about">
-                            <h4>
-                                <span>
-                                    <i class="fa fa-check border"></i>
-                                    Smart planning and execution around change
-                                </span>
-                            </h4>
-                            <p><span>We take a broader, more holistic view of all of the factors that influence the desired changes, and help clients develop and execute the strategies and processes needed to implement these changes and ensure lasting results.</span></p>
-                        </div><!-- /.list-about -->
-                    </div><!-- /.col-md-6 -->
-
-                    <div class="col-md-6">
-                        <div class="title-section style1">
-                            <h3 class="title"><span>Customer Success</span></h3>
-                        </div>
-
-                        <div class="flat-divider d30px"></div>
-
-                        <div class="flat-video-fancybox">
-                            <a class="fancybox" data-type="iframe" href="https://www.youtube.com/embed/2Ge1GGitzLw?autoplay=1"> 
-                                <img src="images/v1.jpg" alt="images">
-                            </a>
-                        </div>
-                    </div><!-- /.col-md-6 -->
-                </div><!-- /.row -->
-
-                <div class="flat-divider d50px"></div>
-
-                <div class="clients-image style1 clearfix">
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c1.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 01</p>
-                    </div>
-
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c2.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 02</p>
-                    </div>
-
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c3.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 03</p>
-                    </div>
-
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c4.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 04</p>
-                    </div>
-
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c5.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 05</p>
-                    </div>
-
-                    <div class="clients-item">
-                        <div class="item-img">
-                            <img src="images/client/c6.png" alt="images">
-                        </div>
-                        <p class="tooltip">Customer 06</p>
-                    </div>
-                </div><!-- /.clients-image -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div class="flat-row">
-            <div class="container">
-                <div class="row">
-                    <div class="flat-wrapper">
-                        <div class="flat-title-button">
-                            <h3 class="title"><i class="fa fa-2x fa-commenting"></i>what our customers have to say about Cosine</h3>
-                        </div>
-                    </div><!-- /.flat-wrapper -->
-                </div><!-- /.row -->
-
-                <div class="flat-divider d35px"></div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="flat-testimonial">
-                            <div class="testimonial">
-                                <div class="testimonial-image">
-                                    <img src="images/testimonials/t1.jpg" alt="images">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-meta">
-                                        <div class="testimonial-author">
-                                            <strong class="author-name">Jeff Kane</strong>
-                                            <div class="author-info">
-                                                <span class="subtitle">CEO</span>
-                                                <span class="divider">-</span>
-                                                <a href="#" class="company">Unified</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <blockquote>Your commitment, passion, and delivery were really amazing. We had a great start and the speed as well as intensity with which we rolled out globally over 3 years was unbelievable.</blockquote>
-                                </div>
-                            </div><!-- /.testimonial -->
-
-                            <div class="testimonial">
-                                <div class="testimonial-image">
-                                    <img src="images/testimonials/t2.jpg" alt="images">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-meta">
-                                        <div class="testimonial-author">
-                                            <strong class="author-name">Jeff Kane</strong>
-                                            <div class="author-info">
-                                                <span class="subtitle">CEO</span>
-                                                <span class="divider">-</span>
-                                                <a href="#" class="company">Unified</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <blockquote>Your commitment, passion, and delivery were really amazing. We had a great start and the speed as well as intensity with which we rolled out globally over 3 years was unbelievable.</blockquote>
-                                </div>
-                            </div><!-- /.testimonial -->
-
-                            <div class="testimonial">
-                                <div class="testimonial-image">
-                                    <img src="images/testimonials/t3.jpg" alt="images">
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-meta">
-                                        <div class="testimonial-author">
-                                            <strong class="author-name">Jeff Kane</strong>
-                                            <div class="author-info">
-                                                <span class="subtitle">CEO</span>
-                                                <span class="divider">-</span>
-                                                <a href="#" class="company">Unified</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <blockquote>Your commitment, passion, and delivery were really amazing. We had a great start and the speed as well as intensity with which we rolled out globally over 3 years was unbelievable.</blockquote>
-                                </div>
-                            </div><!-- /.testimonial -->
-
-                        </div><!-- /.flat-testimonial -->
-                    </div><!-- /.col-md-12 -->
-                </div><!-- /.row -->
-
-                <div class="flat-divider d85px"></div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="view-all-testimonial">
-                            <a href="#" class="link2">View all testimonials<i class="fa fa-chevron-right"></i></a>
-                        </p>
-                    </div><!-- /.col-md-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.flat-row -->
-
-        <div id="flat-map">
-        </div><!-- /#flat-map -->
-       
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="content-bottom-widgets">        
-                <div class="container">
-                    <div class="row"> 
-                        <div class="flat-wrapper">
-                            <div class="ft-wrapper">
-                                <div class="footer-70">
-                                    <div class="widget widget_text">            
-                                        <div class="textwidget">
-                                            <div class="custom-info">
-                                                <span>Have any questions?</span>
-                                                <span><i class="fa fa-reply"></i>themesflat@gmail.com</span> 
-                                                <span><i class="fa fa-map-marker"></i>66 Nicholson St Buffalo New York US</span> 
-                                                <span><i class="fa fa-phone"></i>1 800 232 3485</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.col-md-10 -->
-
-                                <div class="footer-30">
-                                    <div class="widget widget_text">            
-                                        <div class="textwidget">
-                                            <div class="logo-ft"><img src="images/logo-ft.png" alt="logo"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.col-md-2 -->
-                            </div><!-- /.ft-wrapper -->
-                        </div><!-- /.flat-wrapper -->
-                    </div><!-- /.row -->    
-                </div><!-- /.container -->
-            </div><!-- /.footer-widgets -->
-
-            <div class="footer-widgets">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="widget widget_text">            
-                                <div class="textwidget">
-                                    <p>Cosine is a global sales consulting firm that helps clients implement processes and disciplines to drive sustained revenue acceleration.</p>
-                                    <p>We use a holistic, science-based approach combining training, consulting, coaching, and diagnostics to help you get the results you want.</p>
-                                </div>
-                            </div>
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="widget widget_nav_menu">
-                                <div class="menu-footer-menu-container">
-                                    <ul class="ft-menu">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Training Programs</a></li>
-                                        <li><a href="#">Company History</a></li>
-                                        <li><a href="#">Leadership Team</a></li>
-                                        <li><a href="#">What We Do</a></li>
-                                        <li><a href="#">Awards &amp; Recognition</a></li>
-                                        <li><a href="#">Testimonials</a></li>
-                                        <li><a href="#">Partners / Clients</a></li>
-                                        <li><a href="#">Case Studies</a></li>
-                                        <li><a href="shop.html">Sales Books</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- /.col-md-4 -->
-
-                        <div class="col-md-4">
-                            <div class="widget widget_mc4wp_form_widget">
-                                <form class="ft-form">
-                                    <p>
-                                        <label>Monthly Tips &amp; strategies for accelerating revenue.</label>
-                                        <input type="text" name="EMAIL" placeholder="Your email address">
-                                    </p>
-                                    <p>
-                                        <input type="submit" value="Submit">
-                                    </p>
-                                </form>
-                            </div>
-                        </div><!-- /.col-md-4 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.footer-content -->
-
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="social-links">
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-facebook-official"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>
-                        </div><!-- /.col-md-12 -->
-                        <div class="col-md-12">
-                            <div class="copyright">
-                                <div class="copyright-content">
-                                    Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
-                                </div>
-                            </div>
-                        </div><!-- /.col-md-12 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.footer-content -->
-        </footer>
-
-        <!-- Go Top -->
-        <a class="go-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>   
-
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h4>Admin Pages</h4>
+          <ul>
+            <li><a href="#">Boston</a></li>
+            <li><a href="#">How It works</a></li>
+            <li><a href="#">Deals & Coupons</a></li>
+            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Promotion -->
+      <div class="col-lg-4 col-md-7">
+        <!-- App promotion -->
+        <div class="block-2 app-promotion">
+          <a href="">
+            <!-- Icon -->
+            <img src="images/footer/phone-icon.png" alt="mobile-icon">
+          </a>
+          <p>Get the Dealsy Mobile App and Save more</p>
+        </div>
+      </div>
     </div>
-    
-    <!-- Javascript -->
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.easing.js') }}"></script> 
-    <script type="text/javascript" src="{{ asset('/template/javascript/owl.carousel.js') }}"></script> 
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery-waypoints.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.fancybox.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.cookie.js') }}"></script>
-    <script type="text/javascript" src="http://ditu.google.cn/maps/api/js?sensor=false"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/gmap3.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/parallax.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/switcher.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/smoothscroll.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/main.js') }}"></script>
+  </div>
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <!-- Copyright -->
+          <div class="copyright">
+            <p>Copyright © 2016. All Rights Reserved.如何学习网<a href="http://wangwenli.cc" target="_blank" title="模板之家">学习网</a> - Collect from <a href="http://wangwenli.cc" title="学习" target="_blank">学习网</a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12">
+          <!-- Social Icons -->
+          <ul class="social-media-icons text-right">
+              <li><a class="fa fa-facebook" href=""></a></li>
+              <li><a class="fa fa-twitter" href=""></a></li>
+              <li><a class="fa fa-pinterest-p" href=""></a></li>
+              <li><a class="fa fa-vimeo" href=""></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+    <!-- To Top -->
+    <div class="top-to">
+      <a id="top" class="" href=""><i class="fa fa-angle-up"></i></a>
+    </div>
+</footer>
 
-    <!-- Revolution Slider -->
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.themepunch.tools.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/jquery.themepunch.revolution.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/template/javascript/slider.js') }}"></script>
+  <!-- JAVASCRIPTS -->
+  <script src="{{ asset('/template/plugins/jquery/jquery.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/jquery-ui/jquery-ui.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/tether/js/tether.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/raty/jquery.raty-fa.js') }} "></script>
+  <script src="{{ asset('/template/plugins/bootstrap/dist/js/popper.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/bootstrap/dist/js/bootstrap.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/slick-carousel/slick/slick.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/jquery-nice-select/js/jquery.nice-select.min.js') }} "></script>
+  <script src="{{ asset('/template/plugins/fancybox/jquery.fancybox.pack.js') }} "></script>
+  <script src="{{ asset('/template/plugins/smoothscroll/SmoothScroll.min.js') }} "></script>
+  
+  <script src="{{ asset('/template/js/scripts.js"></script>
+
 </body>
+
 </html>
+
+
+
