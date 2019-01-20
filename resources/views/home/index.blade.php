@@ -39,6 +39,10 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <meta name="baidu-site-verification" content="Lr12RVz0ET" />
+
+
+
 </head>
 
 <body class="body-wrapper">
