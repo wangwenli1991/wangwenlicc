@@ -19,3 +19,12 @@ Route::group(['namespace' => 'App'], function () {
     // Route::resource('/comment', 'CommentController');
     // Route::get('/debug', 'HomeController@debug')->name('debug');
 });
+
+
+
+
+Route::group(['namespace'=>'Home'],function(){
+    Route::get('/xuexiai','AiController@index');
+
+
+});
