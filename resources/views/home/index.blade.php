@@ -121,8 +121,20 @@
 			<div class="col-md-12">
 				<!-- Header Contetnt -->
 				<div class="content-block">
-					<h1>Buy & Sell Near You </h1>
-					<p>Join the millions who buy and sell from each other <br> everyday in local communities around the world</p>
+					<h1>wordpress 登录ftp需要密码 </h1>
+					<p>
+         
+
+在wp-config.php 中第57行添加如下代码
+
+<br>
+define("FS_METHOD","direct");
+
+define("FS_CHMOD_DIR", 0777);
+
+define("FS_CHMOD_FILE", 0777);
+
+                    </p>
 					<div class="short-popular-category-list text-center">
 						<h2>Popular Category</h2>
 						<ul class="list-inline">
