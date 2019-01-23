@@ -26,6 +26,15 @@ define("FS_CHMOD_DIR", 0777);
 
 define("FS_CHMOD_FILE", 0777);
 
+git remote rm origin
+
+安装composer  curl -sS https://getcomposer.org/installer | php  ///mv composer.phar /usr/local/bin/composer   composer -v
+设置中国镜像   composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+
+
+
+
                     </p>
 					<div class="short-popular-category-list text-center">
 						<h2>Popular Category</h2>
@@ -389,7 +398,11 @@ define("FS_CHMOD_FILE", 0777);
           <!-- footer logo -->
           <img src="images/logo-footer.png" alt="">
           <!-- description -->
-          <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="alt-color">一般asset用于引用静态文件 css js img 等
+
+asset()方法用于引入 CSS/JavaScript/images 等文件,文件必须存放在public文件目录下。
+
+url()方法生成一个完整的网址。</p>
         </div>
       </div>
       <!-- Link list -->
