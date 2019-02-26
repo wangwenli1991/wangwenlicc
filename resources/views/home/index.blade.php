@@ -35,6 +35,8 @@ git remote rm origin
 
 
 
+
+
                     </p>
 					<div class="short-popular-category-list text-center">
 						<h2>Popular Category</h2>
@@ -249,8 +251,44 @@ git remote rm origin
 				<!-- Section title -->
 				<div class="section-title">
 					<h2>All Categories</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
-				</div>
+sudo apt install python-pip
+
+sudo pip install shadowsocks
+
+ 
+
+vim ssconfig.json
+
+{
+
+"server":"0.0.0.0",
+
+"server_port":2333,
+
+"local_address":"127.0.0.1",
+
+"local_port":1080,
+
+"password":"password",
+
+"timeout":600,
+
+"method":"aes-256-cfb",
+
+"http_proxy": false,
+
+"auth": false
+
+}
+
+ 
+
+sudo ssserver -c ssconfig.json -d start
+--------------------- 
+作者：idihS 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_28804847/article/details/82561512 
+版权声明：本文为博主原创文章，转载请附上博文链接！				</div>
 				<div class="row">
 					<!-- Category list -->
 					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
